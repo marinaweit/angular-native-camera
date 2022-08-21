@@ -1,0 +1,22 @@
+$primary: #ffc938;
+$primary-hover: #fcd363;
+$secondary: #454141;
+
+@mixin yellow-color-grey-border {
+  color: $primary;
+  text-shadow: 2px 0 $secondary, -2px 0 $secondary, 0 2px $secondary,
+    0 -2px $secondary, 1px 1px $secondary, -1px -1px $secondary,
+    1px -1px $secondary, -1px 1px $secondary;
+}
+
+@mixin grey-color-yellow-border {
+  text-shadow: 1px 0 $primary, -1px 0 $primary, 0 1px $primary, 0 -1px $primary,
+    1px 1px $primary, -1px -1px $primary, 1px -1px $primary, -1px 1px $primary;
+  color: $secondary;
+}
+
+@mixin grey-color-white-border {
+  text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  color: $secondary;
+}
